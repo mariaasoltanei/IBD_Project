@@ -22,3 +22,55 @@
 #voc03 2023-10-01 06:00:25
 #voc04 2023-10-01 06:04:26
 #voc05 2023-10-01 06:03:39
+
+sensorEye02 = makeDfSensorSingle(dfFinal, 'eye02')
+sensorEye03 = makeDfSensorSingle(dfFinal, 'eye03')
+sensorEye04 = makeDfSensorSingle(dfFinal, 'eye04')
+sensorEye05 = makeDfSensorSingle(dfFinal, 'eye05')
+sensorEye09 = makeDfSensorSingle(dfFinal, 'eye09')
+sensorEye11 = makeDfSensorSingle(dfFinal, 'eye11')
+
+sensorGas01 = makeDfSensorSingle(dfFinal, 'gas01')
+sensorGas02 = makeDfSensorSingle(dfFinal, 'gas02')
+sensorGas03 = makeDfSensorSingle(dfFinal, 'gas03')
+sensorGas04 = makeDfSensorSingle(dfFinal, 'gas04')
+sensorGas05 = makeDfSensorSingle(dfFinal, 'gas05')
+
+sensorVOC01 = makeDfSensorSingle(dfFinal, 'voc01')
+sensorVOC02 = makeDfSensorSingle(dfFinal, 'voc02')
+sensorVOC03 = makeDfSensorSingle(dfFinal, 'voc03')
+sensorVOC04 = makeDfSensorSingle(dfFinal, 'voc04')
+sensorVOC05 = makeDfSensorSingle(dfFinal, 'voc05')
+
+print(len(sensorEye02))
+print(len(sensorEye03))
+print(len(sensorEye04))
+print(len(sensorEye05))
+print(len(sensorEye09))
+print(len(sensorEye11))
+print(len(sensorGas01))
+print(len(sensorGas02))
+print(len(sensorGas03))
+print(len(sensorGas04))
+print(len(sensorVOC01))
+print(len(sensorVOC02))
+print(len(sensorVOC03))
+print(len(sensorVOC04))
+print(len(sensorVOC05))
+
+# computeMeanColumn(dfConcat, processStatisticalColumns(eyeSelectedSensors, 'humidity'), 'eye.humidity.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(eyeSelectedSensors, 'light'), 'eye.light.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(eyeSelectedSensors, 'motion'), 'eye.motion.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(eyeSelectedSensors, 'temperature'), 'eye.temperature.mean')
+
+# computeMeanColumn(dfConcat, processStatisticalColumns(gasSelectedSensors, 'humidity'), 'gas.humidity.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(gasSelectedSensors, 'light'), 'gas.light.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(gasSelectedSensors, 'motion'), 'gas.motion.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(gasSelectedSensors, 'temperature'), 'gas.temperature.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(gasSelectedSensors, 'co2'), 'gas.co2.mean')
+
+# computeMeanColumn(dfConcat, processStatisticalColumns(vocSelectedSensors, 'humidity'), 'voc.humidity.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(vocSelectedSensors, 'light'), 'voc.light.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(vocSelectedSensors, 'motion'), 'voc.motion.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(vocSelectedSensors, 'temperature'), 'voc.temperature.mean')
+# computeMeanColumn(dfConcat, processStatisticalColumns(vocSelectedSensors, 'tvoc'), 'voc.tvoc.mean')
